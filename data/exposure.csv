@@ -1,0 +1,7 @@
+item_id,quarter,slot,minutes,available
+P01,Q1,早,60,true
+P02,Q1,晚,60,true
+P03,Q1,早,30,true
+P04,Q2,早,60,true
+P05,Q2,晚,60,true
+P06,Q2,早,60,true

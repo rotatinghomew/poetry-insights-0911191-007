@@ -1,0 +1,7 @@
+session_id,item_id,quarter,anonymous_group,channel,interactions
+S01,P01,Q1,G1,散客,8
+S02,P03,Q1,G1,散客,5
+S03,P01,Q1,G2,团体,20
+S04,P03,Q1,G2,团体,18
+S05,P04,Q2,G1,散客,7
+S06,P06,Q2,G1,散客,6
