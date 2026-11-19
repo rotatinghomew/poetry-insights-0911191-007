@@ -1,0 +1,596 @@
+{
+  "quarter": "Q2",
+  "rotation_quota": 2,
+  "thresholds": {
+    "sufficient_coexposure_minutes": 30,
+    "sufficient_coexposure_slots": 1,
+    "min_couse_support": 2,
+    "duplicate_couse_rate": 0.6,
+    "complementary_couse_rate": 0.2,
+    "cold_min_sessions": 2,
+    "lineage_match_score": 0.75,
+    "lineage_low_score": 0.5,
+    "weight_goal": 0.35,
+    "weight_format": 0.2,
+    "weight_channel": 0.2,
+    "weight_slot": 0.15,
+    "weight_cohesion": 0.1,
+    "lineage_ambiguous_gap": 0.1
+  },
+  "data_issues": [],
+  "cold_items": [
+    {
+      "item_id": "P04",
+      "note": "冷启动 / 长期遇冷：会话样本不足，仅给暂定位置，不保证同质或互补",
+      "sessions": 1
+    },
+    {
+      "item_id": "P05",
+      "note": "冷启动 / 长期遇冷：会话样本不足，仅给暂定位置，不保证同质或互补",
+      "sessions": 0
+    },
+    {
+      "item_id": "P06",
+      "note": "冷启动 / 长期遇冷：会话样本不足，仅给暂定位置，不保证同质或互补",
+      "sessions": 1
+    }
+  ],
+  "pair_analysis": [
+    {
+      "item_a": "P04",
+      "item_b": "P06",
+      "item_a_title": "山水诗互动",
+      "item_b_title": "名句拓印",
+      "verdict": "insufficient_exposure",
+      "verdict_zh": "共同曝光或共同使用样本不足（资料稀薄，暂不判定）",
+      "reason_codes": [
+        "couse_support_below_threshold",
+        "cold_item_provisional"
+      ],
+      "cold_items": [
+        "P04",
+        "P06"
+      ],
+      "signals": {
+        "item_a": "P04",
+        "item_b": "P06",
+        "shared_slots": [
+          "早"
+        ],
+        "coexposure_minutes": 60,
+        "coexposure_slot_count": 1,
+        "sessions_a": 1,
+        "sessions_b": 1,
+        "groups_a": 1,
+        "groups_b": 1,
+        "couse_support": 1,
+        "jaccard": 1.0,
+        "couse_rate": 1.0,
+        "walkin_shared_groups": [
+          "G1"
+        ],
+        "group_only_shared": false
+      }
+    },
+    {
+      "item_a": "P04",
+      "item_b": "P05",
+      "item_a_title": "山水诗互动",
+      "item_b_title": "诗句听辨",
+      "verdict": "schedule_separated",
+      "verdict_zh": "从不同时开放（排班造成的假相似，不能判同质）",
+      "reason_codes": [
+        "no_shared_slot"
+      ],
+      "cold_items": [],
+      "signals": {
+        "item_a": "P04",
+        "item_b": "P05",
+        "shared_slots": [],
+        "coexposure_minutes": 0,
+        "coexposure_slot_count": 0,
+        "sessions_a": 1,
+        "sessions_b": 0,
+        "groups_a": 1,
+        "groups_b": 0,
+        "couse_support": 0,
+        "jaccard": 0.0,
+        "couse_rate": 0.0,
+        "walkin_shared_groups": [],
+        "group_only_shared": false
+      }
+    },
+    {
+      "item_a": "P05",
+      "item_b": "P06",
+      "item_a_title": "诗句听辨",
+      "item_b_title": "名句拓印",
+      "verdict": "schedule_separated",
+      "verdict_zh": "从不同时开放（排班造成的假相似，不能判同质）",
+      "reason_codes": [
+        "no_shared_slot"
+      ],
+      "cold_items": [],
+      "signals": {
+        "item_a": "P05",
+        "item_b": "P06",
+        "shared_slots": [],
+        "coexposure_minutes": 0,
+        "coexposure_slot_count": 0,
+        "sessions_a": 0,
+        "sessions_b": 1,
+        "groups_a": 0,
+        "groups_b": 1,
+        "couse_support": 0,
+        "jaccard": 0.0,
+        "couse_rate": 0.0,
+        "walkin_shared_groups": [],
+        "group_only_shared": false
+      }
+    }
+  ],
+  "item_dossiers": {
+    "P04": {
+      "item_id": "P04",
+      "title": "山水诗互动",
+      "quarter": "Q2",
+      "revision": "2",
+      "format": "触屏",
+      "course_goal": "山水",
+      "slots": [
+        "早"
+      ],
+      "channels": [
+        "散客"
+      ],
+      "session_count": 1,
+      "is_cold": true,
+      "cold_note": "冷启动 / 长期遇冷：会话样本不足，仅给暂定位置，不保证同质或互补",
+      "recommended_action": "provisional_keep",
+      "duplicate_partners": [],
+      "duplicate_without_qualified_substitute": [],
+      "relationships": [
+        {
+          "other_item": "P06",
+          "other_title": "名句拓印",
+          "verdict": "insufficient_exposure",
+          "verdict_zh": "共同曝光或共同使用样本不足（资料稀薄，暂不判定）",
+          "reason_codes": [
+            "couse_support_below_threshold",
+            "cold_item_provisional"
+          ],
+          "signals": {
+            "item_a": "P04",
+            "item_b": "P06",
+            "shared_slots": [
+              "早"
+            ],
+            "coexposure_minutes": 60,
+            "coexposure_slot_count": 1,
+            "sessions_a": 1,
+            "sessions_b": 1,
+            "groups_a": 1,
+            "groups_b": 1,
+            "couse_support": 1,
+            "jaccard": 1.0,
+            "couse_rate": 1.0,
+            "walkin_shared_groups": [
+              "G1"
+            ],
+            "group_only_shared": false
+          }
+        },
+        {
+          "other_item": "P05",
+          "other_title": "诗句听辨",
+          "verdict": "schedule_separated",
+          "verdict_zh": "从不同时开放（排班造成的假相似，不能判同质）",
+          "reason_codes": [
+            "no_shared_slot"
+          ],
+          "signals": {
+            "item_a": "P04",
+            "item_b": "P05",
+            "shared_slots": [],
+            "coexposure_minutes": 0,
+            "coexposure_slot_count": 0,
+            "sessions_a": 1,
+            "sessions_b": 0,
+            "groups_a": 1,
+            "groups_b": 0,
+            "couse_support": 0,
+            "jaccard": 0.0,
+            "couse_rate": 0.0,
+            "walkin_shared_groups": [],
+            "group_only_shared": false
+          }
+        }
+      ],
+      "judgements_withheld": [
+        "与 P06：共同曝光或共同使用样本不足（资料稀薄，暂不判定）（couse_support_below_threshold; cold_item_provisional）"
+      ],
+      "course_commitments": [
+        {
+          "course_id": "L2",
+          "slot": "早",
+          "goal": "山水"
+        }
+      ],
+      "appears_in_removal_plans": []
+    },
+    "P05": {
+      "item_id": "P05",
+      "title": "诗句听辨",
+      "quarter": "Q2",
+      "revision": "1",
+      "format": "音频",
+      "course_goal": "声韵",
+      "slots": [
+        "晚"
+      ],
+      "channels": [],
+      "session_count": 0,
+      "is_cold": true,
+      "cold_note": "冷启动 / 长期遇冷：会话样本不足，仅给暂定位置，不保证同质或互补",
+      "recommended_action": "provisional_keep",
+      "duplicate_partners": [],
+      "duplicate_without_qualified_substitute": [],
+      "relationships": [
+        {
+          "other_item": "P04",
+          "other_title": "山水诗互动",
+          "verdict": "schedule_separated",
+          "verdict_zh": "从不同时开放（排班造成的假相似，不能判同质）",
+          "reason_codes": [
+            "no_shared_slot"
+          ],
+          "signals": {
+            "item_a": "P04",
+            "item_b": "P05",
+            "shared_slots": [],
+            "coexposure_minutes": 0,
+            "coexposure_slot_count": 0,
+            "sessions_a": 1,
+            "sessions_b": 0,
+            "groups_a": 1,
+            "groups_b": 0,
+            "couse_support": 0,
+            "jaccard": 0.0,
+            "couse_rate": 0.0,
+            "walkin_shared_groups": [],
+            "group_only_shared": false
+          }
+        },
+        {
+          "other_item": "P06",
+          "other_title": "名句拓印",
+          "verdict": "schedule_separated",
+          "verdict_zh": "从不同时开放（排班造成的假相似，不能判同质）",
+          "reason_codes": [
+            "no_shared_slot"
+          ],
+          "signals": {
+            "item_a": "P05",
+            "item_b": "P06",
+            "shared_slots": [],
+            "coexposure_minutes": 0,
+            "coexposure_slot_count": 0,
+            "sessions_a": 0,
+            "sessions_b": 1,
+            "groups_a": 0,
+            "groups_b": 1,
+            "couse_support": 0,
+            "jaccard": 0.0,
+            "couse_rate": 0.0,
+            "walkin_shared_groups": [],
+            "group_only_shared": false
+          }
+        }
+      ],
+      "judgements_withheld": [],
+      "course_commitments": [],
+      "appears_in_removal_plans": []
+    },
+    "P06": {
+      "item_id": "P06",
+      "title": "名句拓印",
+      "quarter": "Q2",
+      "revision": "1",
+      "format": "纸艺",
+      "course_goal": "书写",
+      "slots": [
+        "早"
+      ],
+      "channels": [
+        "散客"
+      ],
+      "session_count": 1,
+      "is_cold": true,
+      "cold_note": "冷启动 / 长期遇冷：会话样本不足，仅给暂定位置，不保证同质或互补",
+      "recommended_action": "provisional_keep",
+      "duplicate_partners": [],
+      "duplicate_without_qualified_substitute": [],
+      "relationships": [
+        {
+          "other_item": "P04",
+          "other_title": "山水诗互动",
+          "verdict": "insufficient_exposure",
+          "verdict_zh": "共同曝光或共同使用样本不足（资料稀薄，暂不判定）",
+          "reason_codes": [
+            "couse_support_below_threshold",
+            "cold_item_provisional"
+          ],
+          "signals": {
+            "item_a": "P04",
+            "item_b": "P06",
+            "shared_slots": [
+              "早"
+            ],
+            "coexposure_minutes": 60,
+            "coexposure_slot_count": 1,
+            "sessions_a": 1,
+            "sessions_b": 1,
+            "groups_a": 1,
+            "groups_b": 1,
+            "couse_support": 1,
+            "jaccard": 1.0,
+            "couse_rate": 1.0,
+            "walkin_shared_groups": [
+              "G1"
+            ],
+            "group_only_shared": false
+          }
+        },
+        {
+          "other_item": "P05",
+          "other_title": "诗句听辨",
+          "verdict": "schedule_separated",
+          "verdict_zh": "从不同时开放（排班造成的假相似，不能判同质）",
+          "reason_codes": [
+            "no_shared_slot"
+          ],
+          "signals": {
+            "item_a": "P05",
+            "item_b": "P06",
+            "shared_slots": [],
+            "coexposure_minutes": 0,
+            "coexposure_slot_count": 0,
+            "sessions_a": 0,
+            "sessions_b": 1,
+            "groups_a": 0,
+            "groups_b": 1,
+            "couse_support": 0,
+            "jaccard": 0.0,
+            "couse_rate": 0.0,
+            "walkin_shared_groups": [],
+            "group_only_shared": false
+          }
+        }
+      ],
+      "judgements_withheld": [
+        "与 P04：共同曝光或共同使用样本不足（资料稀薄，暂不判定）（couse_support_below_threshold; cold_item_provisional）"
+      ],
+      "course_commitments": [
+        {
+          "course_id": "L2",
+          "slot": "早",
+          "goal": "书写"
+        }
+      ],
+      "appears_in_removal_plans": []
+    }
+  },
+  "rotation_plans": [
+    {
+      "plan_id": "plan_0_keep_all",
+      "removals": [],
+      "replacements": [],
+      "blockers": [],
+      "warnings": [],
+      "committed_coverage_after": {
+        "L2": {
+          "早": {
+            "山水": [
+              "P04"
+            ],
+            "书写": [
+              "P06"
+            ]
+          }
+        }
+      },
+      "lost_commitments": [],
+      "score": 0.0,
+      "feasible": true
+    }
+  ],
+  "stability": {
+    "quarter_old": "Q1",
+    "quarter_new": "Q2",
+    "profiles_old": [
+      {
+        "group_id": "G1",
+        "quarter": "Q1",
+        "items": [
+          "P01",
+          "P03"
+        ],
+        "content_keys": [
+          [
+            "唐诗地图",
+            "投影"
+          ],
+          [
+            "山水诗互动",
+            "触屏"
+          ]
+        ],
+        "session_count": 2,
+        "channel_dist": {
+          "散客": 1.0
+        },
+        "slot_dist": {
+          "早": 1.0
+        },
+        "goal_dist": {
+          "地理": 0.5,
+          "山水": 0.5
+        },
+        "format_dist": {
+          "投影": 0.5,
+          "触屏": 0.5
+        },
+        "avg_interactions": 6.5,
+        "course_ids": [
+          "L1"
+        ]
+      },
+      {
+        "group_id": "G2",
+        "quarter": "Q1",
+        "items": [
+          "P01",
+          "P03"
+        ],
+        "content_keys": [
+          [
+            "唐诗地图",
+            "投影"
+          ],
+          [
+            "山水诗互动",
+            "触屏"
+          ]
+        ],
+        "session_count": 2,
+        "channel_dist": {
+          "团体": 1.0
+        },
+        "slot_dist": {
+          "早": 1.0
+        },
+        "goal_dist": {
+          "地理": 0.5,
+          "山水": 0.5
+        },
+        "format_dist": {
+          "投影": 0.5,
+          "触屏": 0.5
+        },
+        "avg_interactions": 19.0,
+        "course_ids": [
+          "L1"
+        ]
+      }
+    ],
+    "profiles_new": [
+      {
+        "group_id": "G1",
+        "quarter": "Q2",
+        "items": [
+          "P04",
+          "P06"
+        ],
+        "content_keys": [
+          [
+            "名句拓印",
+            "纸艺"
+          ],
+          [
+            "山水诗互动",
+            "触屏"
+          ]
+        ],
+        "session_count": 2,
+        "channel_dist": {
+          "散客": 1.0
+        },
+        "slot_dist": {
+          "早": 1.0
+        },
+        "goal_dist": {
+          "书写": 0.5,
+          "山水": 0.5
+        },
+        "format_dist": {
+          "纸艺": 0.5,
+          "触屏": 0.5
+        },
+        "avg_interactions": 6.5,
+        "course_ids": [
+          "L2"
+        ]
+      }
+    ],
+    "lineages": [
+      {
+        "old_group": "G1",
+        "new_groups": [
+          "G1"
+        ],
+        "relation": "match_low",
+        "score_raw": 0.725,
+        "score_slot_controlled": 0.6765,
+        "score_walkin": 0.5769,
+        "course_ids": [
+          "L1"
+        ],
+        "needs_manual_review": true,
+        "review_reason": "相似度高于弱对应线但低于稳定线，不能直接沿用旧分群结论"
+      },
+      {
+        "old_group": "G2",
+        "new_groups": [
+          "G1"
+        ],
+        "relation": "no_successor",
+        "score_raw": 0.4592,
+        "score_slot_controlled": 0.3638,
+        "score_walkin": null,
+        "course_ids": [
+          "L1"
+        ],
+        "needs_manual_review": true,
+        "review_reason": "所有候选相似度均低于弱对应线，本群在新季度没有可确认的后继"
+      }
+    ],
+    "manual_review": [
+      {
+        "kind": "match_low",
+        "old_group": "G1",
+        "new_groups": [
+          "G1"
+        ],
+        "course_ids": [
+          "L1"
+        ],
+        "reason": "相似度高于弱对应线但低于稳定线，不能直接沿用旧分群结论"
+      },
+      {
+        "kind": "no_successor",
+        "old_group": "G2",
+        "new_groups": [
+          "G1"
+        ],
+        "course_ids": [
+          "L1"
+        ],
+        "reason": "所有候选相似度均低于弱对应线，本群在新季度没有可确认的后继"
+      },
+      {
+        "kind": "merge",
+        "old_group": null,
+        "new_groups": [
+          "G1"
+        ],
+        "course_ids": [
+          "L2"
+        ],
+        "reason": "多个旧分群同时指向同一新分群，疑似合并，需人工确认课程目标是否都保留"
+      }
+    ],
+    "notes": [
+      "Q1 分群 G2 没有散客会话，团体渠道控制后的稳定性无法计算"
+    ]
+  }
+}
